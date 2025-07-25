@@ -1,0 +1,2 @@
+npm run check-lang-support
+npm run pre-commit

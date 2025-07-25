@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "@common/*": ["src/common/*"],
+      "@databases/*": ["src/databases/*"],
+      "@redis/*": ["src/redis/*"],
+      "@rest-api/*": ["src/rest-api/*"],
+      "@schedule/*": ["src/schedule/*"],
+      "@websocket/*": ["src/websocket/*"],
+      "@workers/*": ["src/workers/*"]
+    },
+    "incremental": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+} 
